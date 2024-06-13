@@ -294,6 +294,11 @@
   
   // WebApp
   (function () {
+    console.log('пизда2')
+    console.log('пизда2')
+    console.log('пизда2')
+    console.log('пизда2')
+    
     var Utils = window.Telegram.Utils;
     var WebView = window.Telegram.WebView;
     var initParams = WebView.initParams;
@@ -1022,12 +1027,10 @@
         return mainButton.setParams({ text: text });
       };
       mainButton.onClick = function (callback) {
-        console.log('пизда1')
         onWebViewEvent('mainButtonClicked', callback);
         return mainButton;
       };
       mainButton.offClick = function (callback) {
-        console.log('пизда2')
         offWebViewEvent('mainButtonClicked', callback);
         return mainButton;
       };
