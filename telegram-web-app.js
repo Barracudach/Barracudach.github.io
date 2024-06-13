@@ -894,7 +894,6 @@
   
       function onMainButtonPressed() {
         if (isActive) {
-          console.log('пизда')
           receiveWebViewEvent('mainButtonClicked');
         }
       }
@@ -1023,10 +1022,12 @@
         return mainButton.setParams({ text: text });
       };
       mainButton.onClick = function (callback) {
+        console.log('пизда1')
         onWebViewEvent('mainButtonClicked', callback);
         return mainButton;
       };
       mainButton.offClick = function (callback) {
+        console.log('пизда2')
         offWebViewEvent('mainButtonClicked', callback);
         return mainButton;
       };
