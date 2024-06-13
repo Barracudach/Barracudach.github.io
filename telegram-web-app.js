@@ -894,6 +894,7 @@
   
       function onMainButtonPressed() {
         if (isActive) {
+          console.log('пизда')
           receiveWebViewEvent('mainButtonClicked');
         }
       }
